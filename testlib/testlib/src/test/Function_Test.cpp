@@ -34,7 +34,7 @@ class Test_Function
 
 			auto task = [p, aabb, aabb2](int a, float b) { p->test(a, b); printf("task v0: %llu, v1: %llu \n", aabb, aabb2); };
 			test_func = task;
-
+			test_func(1, 1.0f);
 			size_t aabb3 = 10; (void)aabb3;
 
 		}
